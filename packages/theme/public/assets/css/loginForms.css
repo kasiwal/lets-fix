@@ -421,19 +421,6 @@ background: url("/theme/assets/img/bg.png");
     left: 8px;
 }
 
-.woman_ninja_bottom {
-    position: absolute;
-    left: 21%;
-    pointer-events: none;
-}
-
-.woman_ninja_left {
-    position: absolute;
-    top: 75px;
-    left: -410px;
-    pointer-events: none;
-}
-
 .registration_form {
     width: 440px;
     float: left;

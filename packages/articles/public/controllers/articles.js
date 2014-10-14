@@ -13,7 +13,9 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
       if (isValid) {
         var article = new Articles({
           title: this.title,
-          content: this.content
+          content: this.content,
+          location: this.location,
+          image: this.image
         });
         article.$save(function(response) {
           $location.path('articles/' + response._id);
@@ -21,6 +23,8 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
 
         this.title = '';
         this.content = '';
+        this.location = '';
+        this.image = '';
       } else {
         $scope.submitted = true;
       }

@@ -32,7 +32,7 @@ angular.module('mean.articles').config(['$stateProvider',
           loggedin: checkLoggedin
         }
       })
-      .state('create article', {
+      .state('create issue', {
         url: '/articles/create',
         templateUrl: 'articles/views/create.html',
         resolve: {
